@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg ,#2A0134, #341539);
+    font-family: "Poppins", sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: white;
+}
+h2{
+    text-align: center;
+    width: 100%;
+}
+.container {
+    width: 90%;
+    max-width: 400px;
+    background: rgba(0,0,0,0.75);
+    backdrop-filter: blur(8px);
+    padding: 22px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+input, button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+    border-radius: 12px;
+    font-size: 16px;
+    box-sizing: border-box; 
+}
+
+input {
+    border: 3px solid #341539; 
+    background-color: #343a40;
+    color: white;
+}
+
+button {
+    border: none; 
+    cursor: pointer;
+    transition: 0.3s;
+    color: white;
+}
+
+
+#calcBtn {
+    background: #341539;
+}
+
+#calcBtn:hover {
+    background: #2A0134;
+}
+
+.reset {
+    background: #343a40;
+}
+.history {
+    display: none;
+}
+.result-card {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 22px;
+    animation: popIn 0.4s ease;
+}
+
+.result-love { background: #ffe6f2; color: #d6336c; }
+.result-friends { background: #e0f0ff; color: #1a73e8; }
+.result-marriage { background: #e8ffe6; color: #1f7a1f; }
+.result-enemy { background: #ffe6e6; color: #cc0000; }
+.result-siblings { background: #fff3e0; color: #e67600; }
+
+@keyframes popIn {
+    from {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@media (max-width: 500px) {
+    .container {
+        padding: 18px;
+        max-width: 90%;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    input, button {
+        font-size: 16px;
+    }
+}
+
